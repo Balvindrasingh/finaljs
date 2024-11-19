@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #ffffff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        input {
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 80%;
+            font-size: 1rem;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #6a11cb;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #2575fc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Register</h1>
+    <form action="/register" method="POST">
+        <input type="text" name="name" placeholder="Full Name" required><br>
+        <input type="email" name="email" placeholder="Email Address" required><br>
+        <input type="password" name="password" placeholder="Password" required><br>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

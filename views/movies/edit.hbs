@@ -1,0 +1,9 @@
+<h1>Edit Movie</h1>
+<form action="/movies/edit/{{movie._id}}" method="POST">
+    <input type="text" name="title" value="{{movie.title}}" required />
+    <input type="text" name="genre" value="{{movie.genre}}" required />
+    <input type="text" name="director" value="{{movie.director}}" required />
+    <input type="number" name="releaseYear" value="{{movie.releaseYear}}" required />
+    <input type="text" name="location" value="{{movie.location}}" required />
+    <button type="submit">Save Changes</button>
+</form>

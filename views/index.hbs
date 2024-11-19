@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #576d48, #ee4603);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        header {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #fd3e04;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            letter-spacing: 2px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        a {
+            display: inline-block;
+            font-size: 1.5rem;
+            color: #ffffff;
+            text-decoration: none;
+            background: linear-gradient(135deg, #576d48, #ee4603);
+            padding: 15px 30px;
+            border-radius: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            animation: bounce 2s infinite;
+        }
+
+        a:hover {
+            background: linear-gradient(135deg, #fd3e04, #6a11cb);
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+
+        footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
+                <li><a href="/movies">View Movies</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Welcome to the Movie App</h1>
+    <a href="/movies">View Movies</a>
+    <footer>
+        <p>&copy; 2024 Movie App. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
